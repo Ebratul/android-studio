@@ -1,0 +1,15 @@
+package com.example.jetpeckcompose.ui.theme
+
+import kotlinx.serialization.Serializable
+
+sealed class routs
+{
+    @Serializable
+    object Login
+    @Serializable
+    data class Details(
+
+        val name: String,
+        val email:String
+    )
+}
